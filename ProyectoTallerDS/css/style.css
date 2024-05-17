@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ee;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    text-align: center;
+}
+.navbar {
+    background-color: #d9b08c;
+    color: white;
+    padding: 10px 40px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-links {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+.navbar .title {
+    margin: 0;
+}
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 12px;
+    background-color: #b48972;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.navbar-links a:hover {
+    background-color: #a37260;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #d9b08c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #b48972;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+/*Menú desplegable*/
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: inherit;
+    color: white;
+    font-size: 22px;
+    
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.dropbtn:hover {
+    background-color: #b48972;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    left: -100%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a37260;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#agregarEquipo {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #d9b08c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.eliminarEquipo {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #d9b08c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#agregarEquipo:hover,
+.eliminarEquipo:hover {
+    background-color: #a37260;
+}
+.link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+a {
+    color: #b48972;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.status {
+    padding: 10px;
+    margin-top: 10px;
+}
+.status:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.status-title {
+    font-size: 18px;
+    color: #333;
+}
+.status-state {
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #fff;
+}
+.diagnostico {
+    background-color: #F44336;
+}
+.en-proceso {
+    background-color: #FF9800;
+}
+.espera-piezas {
+    background-color: #FFEB3B;
+    color: #333;
+}
+.finalizado {
+    background-color: #4CAF50;
+}
+
+
+/* Contenedores y estilo para articulos y servicios */
+.container2 {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+.servicios, .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio, .articulo {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #b48972;
+    border-radius: 8px;
+    text-align: center;
+}
+#servicios, #articulos {
+    text-align: center;
+}
+.servicio h3, .articulo h3 {
+    margin-top: 0;
+    color: white;
+}
+
+.servicio p, .articulo p {
+    color: white;
+}
